@@ -1,0 +1,74 @@
+.container{
+    width: 850px;
+    height: 1100px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 200px;
+    height: 200px;
+    background: red;
+    float:left;
+}
+
+.display{
+    display: block;
+    margin-left: 25px;
+    margin-top: 25px;
+    width: 75%;
+    
+}
+.banniere{
+    width: 650px;
+    height: 100px;
+    background-color: pink;
+    float: right;
+}
+
+.boitej{
+    width: 650px;
+    height: 100px;
+    background-color: yellow;
+    float: right;
+}
+
+.boiteblanche{
+    width: 850px;
+    height: 100px;
+    background-color: aqua;
+    float: left;
+}
+
+.aside{
+    width: 200px;
+    height: 500px;
+    background: rebeccapurple;
+    float: right;
+}
+
+.pieddepage{
+    width: 850px;
+    height: 300px;
+    float: right;
+}
+
+
+
+
+
+@media only screen and (max-width:620px) {
+    .container,
+    .logo,
+    .banniere,
+    .boitej,
+    .boiteblanche,
+    .aside,
+    .zonelibre,
+    .pieddepage 
+    {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:850px) and (min-width:620px) {}

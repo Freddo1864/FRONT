@@ -1,0 +1,35 @@
+table,td,th {
+
+    border: 2px solid black;
+    color: rgb(204, 5, 71);
+    font-size:50px;
+    text-align: center;
+    padding:20px;
+    }
+h1{
+    color:aqua;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+h2{
+    color:chartreuse;
+    font-size:30px;
+}
+th{
+    color:red;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+td{
+    color:blue;
+    font-size:15px;
+}
+
+tr:nth-child(even)
+{
+    background-color: rgb(194, 197, 197);
+}
+tr:hover {background-color: gold}
+
+
