@@ -1,0 +1,25 @@
+.header, .content, .sidebar, .footer, .sidebar2{
+    padding: 26px 34px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: black;
+}
+
+.content{
+    background-color: crimson;
+}
+
+.sidebar{
+    background-color: green;
+}
+
+.sidebar2{
+    background-color: rgb(106, 1, 106);
+}
+
+.footer{
+    background-color: rgb(59, 76, 201);
+}

@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{
+    flex-basis: 100%;
+}
+
+.sidebar{
+    flex-basis: 25%;
+}
+
+.sidebar2{
+    flex-basis: 25%;
+}
+
+.content{
+    flex-basis: 50%;
+}
+
+.footer{
+    flex-basis: 100%;
+}
+
+@media  screen and (max-width: 650px) {
+    .content{
+        flex-basis: 100%;
+    }
+    .sidebar{
+        flex-basis: 50%;
+        order: 1;
+    }
+    .sidebar2{
+        flex-basis: 50%;
+        order: 1;
+    }
+    .footer{
+        order: 2;
+    }
+}
+
+
+@media  screen and (max-width: 505px) {   
+    .sidebar{
+        flex-basis: 100%;
+        order: 1;
+    }
+    .sidebar2{
+        flex-basis: 100%;
+        order: 1;
+    }
+}
+
+
