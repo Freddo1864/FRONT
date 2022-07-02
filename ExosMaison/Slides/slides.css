@@ -1,0 +1,53 @@
+img{
+    width: 500px;
+    height: 330px;
+}
+
+/* Les photos sont dimensionnées au dessus, et par défaut elles sont les unes en dessous des autres*/
+
+.sliders{
+    /* Width pour donner largeur aux photos; Overflow hidden pour mettre les photos les unes derrière les autres*/
+    /*  margin pour décaler lees photos au milieu de l'écran*/
+    width: 500px;
+    overflow: hidden;
+    margin: 150px auto;
+}
+
+
+.slides{
+    /*  width calc : ??? ;  animation appelle la keyframes glisse pour faire défiler les photos de droite à gauche*/
+    width: calc(500px * 3);
+    animation: glisse 10s infinite;
+}
+
+.slide{
+    /* Float aligne les photos en ligne en haut de page*/
+    float: left;
+}
+
+/* 0; 33; 66 ;100% parce que 3 photos    si 4 photos  0; 25; 50; 75; 100%*/
+/* les 10% rajoutés servent a bloquer la photo pour éviter le passage trop rapide d'une photo à l'autre*/
+
+@keyframes glisse {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-500px);
+    }
+    43% {
+        transform: translateX(-500px);
+    }
+    66% {
+        transform: translateX(-1000px);
+    }
+    76% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
