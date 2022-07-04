@@ -54,6 +54,54 @@ img{
     flex-basis: 25%;
 }
 
+.content{
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgb(93, 93, 93);
+}
+h2{
+    text-align: center;
+}
+
+label{
+    position: relative;
+    top: 20px;
+    left: 15px;
+    color: rgb(3, 165, 98);
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.form{
+    width: 450px;
+    background-color: rgb(93, 93, 93);
+    border: 2px solid rgb(3, 165, 98);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nom, #prenom, #telephone, #email, #ville{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    width: 250px;
+    height: 30px;
+}
+
+.boutenv{
+   display: flex;
+   justify-content: center;
+}
+
+.envoyer{
+    width: 150px;
+    height: 50px;
+    background-color: rgb(3, 165, 98);
+    color: white;
+    font-size: x-large;
+}
+    
 
 @media screen and (max-width: 1000px) {
     .identite{
