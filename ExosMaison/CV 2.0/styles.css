@@ -31,9 +31,10 @@
 }
 
 img{
-    border: 2px solid yellow;
+    border: 2px solid rgb(3, 165, 98);
     height: 100px;
     width: 100px;
+    margin-top: 10px;
 }
 
 .navbar{
@@ -101,7 +102,8 @@ label{
     color: white;
     font-size: x-large;
 }
-    
+ 
+/* AJUSTEMENT DE LA PAGE EN 1000px */
 
 @media screen and (max-width: 1000px) {
     .identite{
@@ -137,3 +139,19 @@ label{
     }    
 }
 
+/* AJUSTEMENT DE LA PAGE EN 600px */
+
+@media screen and (max-width: 600px) {
+    .navbar{
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+        margin-top: 5px;
+        border-radius: 5%;
+        
+
+    }
+    .present, .diplome, .formation {
+            font-size: 20px;
+    }
+}
