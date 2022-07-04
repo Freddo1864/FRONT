@@ -1,0 +1,32 @@
+.container-fluid{
+    background-color: aqua;
+}
+
+
+#box1{
+    display: grid;
+    background-color: grey;
+    height: 80px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    text-overflow: fade(50%);
+   
+    
+
+}
+
+#box2{
+    background-color: rgb(158, 153, 153);
+    height: 80px;
+}
+
+#box3{
+    background-color: rgb(103, 174, 233);
+    height: 80px;
+}
+
+#box4{
+    background-color: rgb(6, 189, 82);
+    height: 80px;
+}
