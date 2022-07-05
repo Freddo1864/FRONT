@@ -1,0 +1,56 @@
+.container{
+      /* margin: 0; */
+      display: grid;
+}
+
+
+
+.photo{
+      width: 200px;
+}
+
+img{
+      width: 150px;
+      margin: 25px;
+      border-radius: 5%;
+      border: 2px solid rgb(176, 226, 9);
+}
+
+
+
+.identite{
+      border: 1px solid rgb(98, 190, 6);
+      color: rgb(124, 2, 2);
+      margin-top: 25px;
+      height: 130px;
+      width: 280px;
+      text-align: center;
+      padding: 30px;
+      font-size: x-large;
+      font-weight: bolder;
+}
+
+
+
+.navbar{
+      
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .container{
+      background-color: black;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 2px;
+      grid-row-gap: 2px;      
+} */
