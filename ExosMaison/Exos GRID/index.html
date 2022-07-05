@@ -1,108 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exos GRID</title>
-    <link rel="stylesheet" href="./styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container-fluid">
-      <header>
 
-        <div class="logo"><img src="./img/logo html css js.png" /></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exos GRID</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+</head>
 
-        <div class="menu">
-          <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Accueil</a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Profil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Biographie</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Technologies</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Contacts
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li>
-                        <a class="dropdown-item" href="#">N° de téléphone</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Adresses Mail</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#">Formulaire de contact</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-              <div class="identite">
-                <div class="nom">
-                QUERTAIMONT <br> Frédéric
-              </div>
-              <div class="infos">Né le 18/08/1979 <br> En formation <br> Développeur Web et Web Mobile</div>
-              </div>
+<body>
+  <div class="container-fluid">
+    <header>
+
+      <div class="logo"><img src="./img/logo html css js.png" /></div>
+      <div class="identite">
+        <div class="nom">
+          QUERTAIMONT <br> Frédéric
+        </div>
+        <div class="infos">Né le 18/08/1979 <br> En formation <br> Développeur Web <br> Web Mobile</div>
+      </div>
+      <div class="menu">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Accueil</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Biographie</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Technologies</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Contacts
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="#">N° de téléphone</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Adresses Mail</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Formulaire de contact</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-          </nav>
 
-          <!-- <ul>
+          </div>
+        </nav>
+
+        <!-- <ul>
                     <li><a class="active" href="#">Profil</a></li>
                     <li><a href="#">Biographie</a></li>
                     <li><a href="#">Technologies</a></li>
                     <li><a href="#">Contact</a></li>                    
                 </ul> -->
-        </div>
-      </header>
-
-      <div class="parent1">
-        <div class="enfant1">DIV 1 de parent1 avec 30% de large</div>
-        <div class="enfant2">DIV 2 de parent1 avec 70% de large</div>
       </div>
+    </header>
 
-      <div class="parent2">
-        <div class="enfant21">01</div>
-        <div class="enfant22">02</div>
-        <div class="enfant23">02</div>
-      </div>
+    <div class="parent1">
+      <div class="enfant1">DIV 1 de parent1 avec 30% de large</div>
+      <div class="enfant2">DIV 2 de parent1 avec 70% de large</div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <div class="parent2">
+      <div class="enfant21">01</div>
+      <div class="enfant22">02</div>
+      <div class="enfant23">02</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

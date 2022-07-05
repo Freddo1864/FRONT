@@ -8,6 +8,10 @@
 
 }
 
+.menu{
+
+}
+
 
 img{
     width: 50px;
@@ -37,7 +41,7 @@ img{
 header{
     /* background-color: brown; */
     display: grid;
-    grid-template-columns: 20% 50% 30%;
+    grid-template-columns: 15% 40% 45%;
 }
 
 ul{
@@ -87,11 +91,20 @@ li a:hover:not(.active){
     height: 100%;
 }
 
+.identite{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .infos{
 
 }
 
 .nom{
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 10px;
     
 }
 
