@@ -9,9 +9,15 @@ var y = canvas.height-30;
 var dx = 2;
 var dy = -2;
 
+/* Variable permettant de conserver le rayon de la balle */
+var ballRadius = 10;
+
+
+
+/* Fonction permettant de créer la balle */
 function drawBall(){
       ctx.beginPath();
-      ctx.arc(x, y, 10, 0, Math.PI*2);
+      ctx.arc(x, y, ballRadius, 0, Math.PI*2);
       ctx.fillStyle = "#0095DD"
       ctx.fill();
       ctx.closePath();
@@ -22,8 +28,17 @@ function draw() {
       /* Ajout de ctx.clearRect pour effacer la balle après chaque déplacement */
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       drawBall();
+
       x += dx;
       y += dy;
+
+      if (x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+            dx = -dx;
+      }
+
+      if (y + dy > canvas.height-ballRadius || y + dy < ballRadius ) {
+            dy = -dy;
+      }
 }
 setInterval(draw, 10);
 
