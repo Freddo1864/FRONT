@@ -1,16 +1,19 @@
 .container{
-      /* margin: 0; */
-      display: grid;
+      display: flex;
+      flex-wrap: wrap;
+     
 }
+
 
 
 
 .photo{
       width: 200px;
+     
 }
 
 img{
-      width: 150px;
+      width: 120px;
       margin: 25px;
       border-radius: 5%;
       border: 2px solid rgb(176, 226, 9);
@@ -21,19 +24,32 @@ img{
 .identite{
       border: 1px solid rgb(98, 190, 6);
       color: rgb(124, 2, 2);
-      margin-top: 25px;
-      height: 130px;
-      width: 280px;
+      margin-top: 50px;
+      height: 100px;
+      width: 260px;
       text-align: center;
-      padding: 30px;
+      padding: 20px;
+      padding-top: 15px;
       font-size: x-large;
       font-weight: bolder;
+      display: flex;
+      justify-content: center;
+      align-content: center;
 }
 
 
 
 .navbar{
-      
+      margin-left: 17px;
+      background-color: rgb(164, 205, 164);
+      color: rgb(38, 2, 78);
+      border: 2px solid green;      
+}
+
+.btn{
+      font-weight: bold;
+      color: white;
+      border: 1px solid greenyellow;
 }
 
 
