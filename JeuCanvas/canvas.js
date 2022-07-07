@@ -31,6 +31,49 @@ var paddleX = (canvas.width-paddleWidth) / 2;
 var rightPressed = false;
 var leftPressed = false;
 
+
+/* 3 lignes, 5 colonnes, 75px de large; 20px de haut, espacement entre les briques de 10px, position de départ de la création des briques décalée
+du haut 30px (top) et décalée de la gauche de 30px (left) */
+var brickRowCount = 3;
+var brickColumnCount = 5;
+var brickWidth = 75;
+var brickHeight = 20;
+var brickPadding = 10;
+var brickOffsetTop = 30;
+var brickOffsetLeft = 30;
+
+
+var brickX = (c*(brickWidth + brickPadding)) + brickOffsetLeft;
+var brickY = (r*(brickHeight + brickPadding)) + brickOffsetTop;
+
+
+
+// Création d'un tableau pour stocker les valeurs correspondant aux briques  c = column  r = row 
+var bricks = [];
+for ( var c = 0; c < brickColumnCount; c++) {
+      bricks[c] = [];
+      for ( var r = 0; r < brickRowCount; r++) {
+            bricks [c][r] = { x:0, y:0};
+      }
+}
+
+// Fonction qui permet la création des briques
+function drawBricks() {
+      for(var c=0; c<brickColumnCount; c++) {
+            for(var r=0; r<brickRowCount; r++) {
+                  var brickX = (c*(brickWidth + brickPadding)) + brickOffsetLeft;
+                  var brickY = (r*(brickHeight + brickPadding)) + brickOffsetTop;
+                  bricks[c][r].x = brickX;
+                  bricks[c][r].y = brickY;
+                  ctx.beginPath();
+                  ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                  ctx.fillStyle = "#0095DD";
+                  ctx.fill();
+                  ctx.closePath();
+            }
+      }
+}
+
 // Fonction permettant de créer la balle
 function drawBall(){
       ctx.beginPath();
@@ -42,7 +85,7 @@ function drawBall(){
 
 // Fonction permettant de dessiner la raquette (contrôleur)
 function drawPaddle() {
-      // Permet de commencer un nouveau chemin
+      // Permet de commencer un nouveau chemin.....
       ctx.beginPath();
       // => position de départ du rectangle : 202.5px , 280px et dimensions de rectangle : W75px , H10px)
       ctx.rect (paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
@@ -59,6 +102,7 @@ function draw() {
       // Appel des fonctions
       drawBall();
       drawPaddle();
+      drawBricks();
 
       x += dx;
       y += dy;
@@ -127,7 +171,7 @@ function keyUpHandler(e) {
 }
 
 /* setInterval : Méthode qui appelle la fonction draw toutes les 10 millisecondes
-Fonction draw qui permet de créer le dessin de la balle et du paddle et l'effacement de ces derniers   */
+Fonction draw qui permet de créer le dessin de la balle et du paddle et l'effacement de ces derniers pour créer le déplacement  */
 var interval = setInterval(draw, 10);
 
 
