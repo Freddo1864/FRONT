@@ -18,9 +18,9 @@ tabetudiant[14] = "Halim";
 tabetudiant[15] = "Zakaria";
 // Affichage du tableau dans la console du navigateur. Si on utilise .log l'affichage dans la console se fera en ligne. 
 console.table(tabetudiant);
+
+
 // Fonction recherche étudiant :
-
-
 function searchetud() {
       // On récupère le prénom via l'input "id=prenom" sur l'HTML pour la stocker dans la variable prenetudiant
       let prenetudiant = document.getElementById("prenom").value;

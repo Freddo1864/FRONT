@@ -1,0 +1,55 @@
+body {
+      width: 800px;
+      height: 400px;
+      margin-left: calc(50% - 400px);
+      border: 3px solid grey;
+}
+
+label {
+      color: blue;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 30px;
+      margin-left: calc(50% - 250px);
+      font-weight: bold;
+      width: 500px;
+}
+
+#btn {
+      background-color: rgb(74, 76, 74);
+      margin-top: 40px;
+      margin-left: calc(50% - 50px);
+      width: 100px;
+      height: 30px;
+      color: white;
+}
+
+#prenom {
+      background-color: cornflowerblue;
+      border: 2px solid rgb(83, 83, 82);
+      width: 340px;
+      height: 30px;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      margin-left: calc(50% - 170px);
+      margin-top: 20px;
+}
+
+#affiche{
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#reponse {
+      text-align: center;
+      font-weight: 900;
+}
+
+h1{
+      text-align: center;
+      color: lightseagreen;
+}
+h5{
+      text-align: center;
+      color: red;
+}
