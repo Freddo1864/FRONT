@@ -17,7 +17,22 @@ tabetudiant[13] = "Outman";
 tabetudiant[14] = "Halim";
 tabetudiant[15] = "Zakaria";
 // Affichage du tableau dans la console du navigateur. Si on utilise .log l'affichage dans la console se fera en ligne. 
-console.table(tabetudiant);
+// console.table(tabetudiant);
+// var newTab = new Array();
+
+// newTab["prenom"] = new Array("Salome","Oceane", "Karim", "Jimmy","Benoit", "Frederic", "Gregory", "Camille", "Anthony", "Cedric", "Stephane", "Perrine", "Theo", "Outman", "Halim", "Zakaria");
+// newTab["ville"] = new Array("Assevent", "Cousolre", "Roubaix", "Lille", "Liessies", "Jeumont", "Recquignies", "Le Quesnoy", "Trelon", "St Michel", "Bavay", "La Longueville", "Marpent", "Maubeuge", "Maubeuge", "Maubeuge" );
+// newTab["age"] = new Array(33, 20, 35, 30, 37,43,35,24,27,31,24,20,22,32,43,24);
+
+// console.table(newTab);
+
+// document.write(`${newTab["prenom"][5]} est agé(e) de ${"age"} ans et habite à ${"ville"}`);
+// document.write("</br>");
+// document.write(newTab["prenom"][5] + " est agé(e) de " + newTab["age"][5] + " ans et habite à " + newTab["ville"][5]);
+
+
+
+
 
 
 // Fonction recherche étudiant :
@@ -39,6 +54,7 @@ function searchetud() {
                   document.getElementById("reponse").innerHTML = `${prenetudiant}  ne se trouve pas dans la liste des inscrits à la formation.` ;
             }
 }
+
 
 
 
