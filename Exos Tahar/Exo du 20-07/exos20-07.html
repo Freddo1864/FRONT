@@ -5,15 +5,27 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title> appli qui souligne les mots sélectionnés</title>
- <link rel="stylesheet" href="./input.css">
+ <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-          <label id="label">Le texte d'origine est : </label>
-          <p id="texteorigine"></p>
-          <label id="label">Voici les occurences isolées du texte qui devront être surlignées : </label>
-          <p id="demo"></p>
-          <label id="label">Voici les occurences du texte d'origine avec les "o" surlignés : </label>
+          <label id="label">Veuillez entrer votre texte ici : </label>
+          <br><br>
+          <input type="text" id="texteorigine" placeholder="Veuillez entrer votre texte ici : ">
+          <br><br>
+          <!-- <button type="button" onclick="recupocc()">Valider votre texte</button> -->
+          <br><br>
+          Voici le texte sur lequel vous souhaitez effectuer le traitement :
+          <p id="original"></p>
+          <br><br>
+          <label id="label">Veuillez entrer l'occurrence recherché : </label>
+          <br><br>
+          <input type="text" id="chercher" placeholder="Votre occurrence ici : ">
+          <br><br>
+          <button type="button" onclick="recupocc()">Valider le choix de l'occurrence</button><br><br>
+          <!-- <button type="button" onclick="traitement()">Lancer la recherche...</button> -->
+          
           <p id="reponse"></p>
-    <script src="./input.js"></script>
+
+    <script src="./app.js"></script>
 </body>
 </html>
