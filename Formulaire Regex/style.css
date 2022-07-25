@@ -1,0 +1,14 @@
+* {
+          box-sizing: border-box;
+          /* background-color: grey; */
+          margin-top: 20px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+          text-align: center;
+}
+
+h6 {
+          font-size: 8px;
+}

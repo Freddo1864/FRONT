@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Formulaire Regex</title>
+          <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+          <form action="" method="post">
+                    Nom : <input type="text" id="nom" name="nom">
+                    <br>
+                    Prénom : <input type="text" id="prenom" name="prenom">
+                    <br>
+                    Date de naissance : <input type="text" id="date" name="date">
+                    <h6>La date de naissance doit être au format : JJ/MM/AAAA ou JJ-MM-AAAA</h6>                    
+                    Email : <input type="email" id="email" name="email">
+                    <h6>L'adresse mail doit contenir : Ex: nom@domaine.fr</h6>
+                    Mot de passe : <input type="text" id="mdp" name="mdp">
+                    <br>
+                    <h6>Le mot de passe de contenir : entre 6 et 20 caractères qui contiennent au moins un chiffre , une majuscule et une minuscule </h6>
+                    <br>
+                    <button type="button" id="btn" name="btn">VALIDER</button>
+          </form>
+          <script src="./app.js"></script>
+</body>
+</html>
