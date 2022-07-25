@@ -1,0 +1,19 @@
+* {
+          box-sizing: border-box;
+          text-align: center;
+}
+
+body {
+          background-color: grey;
+          width: 100vw;
+          height: 100vh;
+}
+
+#position {
+          color: white;
+          font-size: x-large;
+}
+
+h1 {
+          margin-bottom: 100px;
+}
