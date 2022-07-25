@@ -1,0 +1,14 @@
+* {
+          box-sizing: border-box;
+}
+
+h1 {
+          color: blue;
+}
+
+#input {
+          width: 50%;
+          font-size: x-large;
+          background-color: green;
+          border-radius: 5px;
+}
